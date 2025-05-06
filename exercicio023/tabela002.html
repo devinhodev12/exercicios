@@ -17,12 +17,19 @@
         border:1px solid black;
         padding: 10px;
     }
-    th{
-     color:black;
-     background-color: burlywood;
-     
+   tfoot,thead{
+    background-color:rgb(86, 84, 84);
 
-    }
+   }
+    caption{
+        background-color: rgba(86, 84, 84, 0.348);
+        font-size: 1.4em;
+        font-weight: bolder;
+        padding: 5px;
+        
+    } 
+
+    
     td{
         vertical-align: middle;
     }
@@ -47,11 +54,12 @@
     
     -->
     <table>
-      <thead>
+         <caption>População das Unidades Federativas</caption>
+        <thead>
          <tr>
-             <th>Unidade federativa</th>
-             <th>População</th>
-             <th>% do total <br>
+             <th scope="col">Unidade federativa</th>
+             <th scope="col">População</th>
+             <th scope="col" style="width: 50px;">% do total <br>
                 (2024)
              </th>
              
@@ -61,7 +69,7 @@
 
       <tbody>
         <tr>
-           <td>São Paulo</td>
+           <td >São Paulo</td>
            <td class="numero">45 973 194</td> 
            <td class="numero">21,63%</td>
 
@@ -121,14 +129,14 @@
         </tr>
         
       </tbody>
-        <tr>
-        <th><strong>População total</strong></th>
-        <td class="numero">145 425 882</td>
-        <td class="numero">~74,3%</td>
-        </tr>
+       
         
       <tfoot>
-
+        <tr>
+            <th scope="row"><strong>População total</strong></th>
+            <td class="numero">145 425 882</td>
+            <td class="numero">~74,3%</td>
+        </tr>
       </tfoot>
     </table>
 </body>
