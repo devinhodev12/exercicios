@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filmes favoritos</title>
+    
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+           
+        }
+        caption{
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+
+
+        
+        th,td{
+         padding: 10px; 
+         border: 1px solid rgba(128, 128, 128, 0.638);
+
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <caption>Filmes favoritos </caption>
+        <thead>
+           <tr>
+               <th scope="col">Grupos</th>
+               <th style="width: 100px;" scope="col">Nomes</th>
+               <th colspan="3" scope="colgroup">Filmes</th>
+           </tr>
+        </thead>
+
+        <tbody>
+           <tr>
+               <th rowspan="3" scope="rowgroup">Mulheres</th>
+               <td>Laura aguiar</td>
+               <td>Homem de Ferro</td>
+               <td>Transformers</td>
+               <td>Trapalhões</td>
+           </tr>
+           <tr>
+             <td>Joana Lacerda</td>
+             <td>Besouro verde</td>
+             <td>Lanterna Verde</td> 
+             <td>A casa de vidro</td>
+           </tr>
+           <tr>
+            <td>Thainara</td>
+            <td>Titanic</td>
+            <td>Felozes Furiosos 3</td>
+            <td>Ela Dança eu Danço 2</td>
+
+
+           </tr>
+           <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Jessé pinto</td>
+            <td>A orfã 2</td>
+            <td>Dragão branco</td>
+            <td>Os pretendentes da filha do Coronel 2 </td>
+
+           </tr>
+
+           <tr>
+            <td>Alex Maxium</td>
+            <td>A vovozona</td>
+            <td>Star wars 2</td>
+            <td>Godzilla vs KingKong</td>
+
+           </tr>
+
+           <tr>
+
+            <td>Pedro Moreno</td>
+            <td>Os Três Conselhos</td>
+            <td>Crepúsculo 2</td>
+            <td>Max Steel</td>
+           </tr>
+        </tbody>
+
+        
+    </table>
+</body>
+</html>
