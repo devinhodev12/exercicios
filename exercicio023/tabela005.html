@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup tabelas</title>
+    <style>
+      body{
+        font-family: 'Courier New', Courier, monospace;
+      }
+     table{
+        border-collapse: collapse;
+     }
+
+    th,td{
+        border: 1px solid black;
+        padding: 10px;
+
+      }
+     caption{
+        padding: 10px;
+        font-weight: bold;
+     }
+     col.cgroup{
+        background-color: aqua;
+     }
+     .verde{
+        background-color: green;
+     }
+     col.cprof{
+        background-color: blue;
+     }
+
+
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    <h1>Exercício de tabelas </h1>
+    <table>
+        <colgroup>
+          <col class="cgroup">
+          <col class="verde" span="2">
+          <col class="cprof">
+          
+        
+        
+        
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+           <th>Nome</th>
+           <th>Sexo</th> 
+           <th>Idade</th> 
+           <th>Profissão</th> 
+
+        </tr>
+        <tr>
+          <td>Afonso</td>
+          <td>M</td>
+          <td>45</td>
+          <td>Lavrador</td>
+
+        </tr>
+        <tr>
+            <td>Dários</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Gestor de finanças</td>
+
+
+        </tr>
+        <tr>
+            <td>Bela silva</td>
+            <td> F</td>
+            <td>23</td>
+            <td>Enfermeira</td>
+
+
+        </tr>
+        <tr>
+            <td>Joana</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Assistente Bancária</td>
+
+
+        </tr>
+        <tr>
+            <td>Thiago</td>
+            <td>M</td>
+            <td>32</td>
+            <td> Arquiteto</td>
+
+
+        </tr>
+    </table>
+</body>
+</html>
